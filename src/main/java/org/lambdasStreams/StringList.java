@@ -9,4 +9,10 @@ public class StringList {
                 .filter(s -> s.contains("o"))
                 .collect(Collectors.toList());
     }
+
+    public List<String> containOAnd6letters(List<String> list) {
+        return list.stream()
+                .filter(s -> s.contains("o") && s.length() > 5)
+                .collect(Collectors.toList());
+    }
 }
