@@ -23,4 +23,11 @@ public class StringListTest {
         assertEquals(List.of("Monday"), result);
     }
 
+    @Test
+    void testContainOAnd6letters() {
+        List<String> input = List.of("Alejandro", "Fernando", "Omar", "Camila", "Oscar" );
+        List<String> result = stringList.containOAnd6letters(input);
+        assertEquals(List.of("Alejandro", "Fernando"), result);
+    }
+
 }
