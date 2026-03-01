@@ -8,5 +8,7 @@ public class App
         Months months = new Months();
 
         months.printMonth();
+
+        months.printMonthReferences();
     }
 }

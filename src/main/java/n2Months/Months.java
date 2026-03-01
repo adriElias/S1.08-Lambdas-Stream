@@ -19,6 +19,7 @@ public class Months {
     public void printMonth(){
         months.forEach(month -> System.out.println(month));
     }
-
-
+    public void printMonthReferences(){
+        months.forEach(System.out::println);
+    }
 }

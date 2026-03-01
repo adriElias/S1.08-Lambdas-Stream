@@ -29,7 +29,8 @@ public class MonthsTest {
                                                 "September",
                                                 "October",
                                                 "November",
-                                                "December");
+                                                "December"
+        );
 
         List<String> aux = new ArrayList<>();
 
@@ -38,5 +39,28 @@ public class MonthsTest {
         assertEquals(12, aux.size());
         assertEquals("January", aux.get(0));
         assertEquals("December", aux.get(11));
+    }
+
+    @Test
+    void testMonthsMethodReference() {
+        List<String> months = List.of("January",
+                                                "February",
+                                                "March",
+                                                "April",
+                                                "May",
+                                                "June",
+                                                "July",
+                                                "August",
+                                                "September",
+                                                "October",
+                                                "November",
+                                                "December"
+        );
+
+        List<String> aux = new ArrayList<>();
+        months.forEach(aux::add);
+
+        assertEquals(12, aux.size());
+        assertEquals("July", aux.get(6));
     }
 }
