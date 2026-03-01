@@ -1,4 +1,4 @@
-package org.lambdasStreams;
+package n1StringList;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package org.lambdasStreams;
+package n1StringList;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ public class StringListTest {
 
     @BeforeEach
     void setUp() {
-        stringList = new StringList(); // ← esto es lo que falta
+        stringList = new StringList();
     }
 
     @Test
