@@ -1,4 +1,4 @@
-package org.lambdasStreams;
+package n1StringList;
 
 /**
  * Hello world!
