@@ -1,0 +1,13 @@
+package n5SortedReverse;
+
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class SortedReverse {
+    public List<String> descSort(List<String> words) {
+        return words.stream()
+                    .sorted(Comparator.comparingInt(String::length).reversed())
+                    .collect(Collectors.toList());
+    }
+}
